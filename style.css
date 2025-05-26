@@ -1,0 +1,120 @@
+body::selection{
+    color: wheat;
+    background-color: rgb(26, 25, 24);
+}
+body{
+    margin: 0px;
+    background-image: url(photos/Freezing\ Nat\ Geo\ GIF\ by\ National\ Geographic\ Channel.gif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+h1{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 2px 4px 1px black;
+}
+h1:hover{
+    color: rgb(250, 248, 248);
+    animation-name: glowss;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+.navbar ul{
+    list-style-type: none;
+    background-color: rgb(20, 18, 18);
+    padding: 0px;
+    margin: 0px;
+    overflow: hidden;
+}
+.navbar a{
+    color: white;
+    text-decoration: none;
+    display:inline-block;
+    text-align: center;
+    padding: 15px;
+}
+.navbar a:hover{
+    background-color: rgb(61, 111, 112);
+}
+.navbar a:active{
+    background-color: rgb(0, 0, 0);
+}
+.navbar li{
+    float: left;
+}
+@keyframes glow{
+50%{box-shadow: 0px 0px 80px beige;}
+}
+h3{
+    text-align: center;
+    font-size: 2em;
+    display: block;
+    float: none;
+    padding: 0px;
+    margin-top: 10px;
+    color: whitesmoke;
+    text-shadow: 3px 3px 1px black;
+}
+@keyframes glows{
+50%{box-shadow: 0px 0px 40px rgb(12, 1, 1);}
+}
+h3:hover{
+    animation-name: glows;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    
+}
+@keyframes glowss{
+50%{box-shadow: 0px 0px 40px rgb(9, 1, 1);}
+}
+main p{
+    color: rgb(7, 7, 7);
+    font-size: 2em;
+}
+main p:hover{
+animation-name: glowsss;
+animation-duration: 2s;
+animation-iteration-count: infinite;
+background-color: rgb(15, 148, 172);
+
+}
+main p:not(:hover){
+    background-color: aliceblue;
+}
+@keyframes glowsss{
+50%{box-shadow: 0px 0px 40px rgb(244, 242, 242);}
+}
+h2:hover{
+background-color: rgb(6, 108, 164);
+}
+h2{
+    color: rgb(11, 12, 12);
+}
+main h2:not(:hover){
+    background-color: aliceblue;
+}
+.navbar a:not(:hover){
+ animation-name: glow;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+h1:not(:hover){
+animation-name: chamakta;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+@keyframes chamakta{
+50%{box-shadow: 0px 0px 80px rgb(5, 5, 5);}
+}
+@keyframes glowing{
+50%{box-shadow: 0px 0px 50px rgb(8, 172, 248);}
+}
+h3:not(:hover){
+    animation-name: glowing;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+
+}
